@@ -78,8 +78,15 @@ WSGI_APPLICATION = 'UPBPlatform.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'u3163482_UPBPlatform',  # Имя базы данных из панели управления Reg.ru
+        'USER': 'u3163482_default',  # Пользователь базы данных из панели управления
+        'PASSWORD': 'bB5458xksMZR5Wzo',  # Пароль из панели управления
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
