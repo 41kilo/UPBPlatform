@@ -310,13 +310,20 @@
         margin-left: 10px;
     }
 
-    .program-results-text{
+        .program-results-text{
         font-size: 25px;
         margin-bottom: 25px;
     }
 
 
     .program .container{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .programModal .program .container{
         display: flex;
         align-items: flex-start;
         margin-top: 30px;
