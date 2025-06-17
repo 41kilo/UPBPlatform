@@ -879,7 +879,7 @@
     }
     
     .carousel img {
-        width: 200px;
+        width: 250px;
         height: auto;
         object-fit: scale-down;
         border-radius: 15px;
@@ -897,17 +897,6 @@
         transition: all 0.3s ease;
     }
     
-    .arrow:focus {
-        outline: none;
-        transition: all 0.3s ease;
-    }
-    
-    .arrow:hover {
-        cursor: pointer;
-        color: #3A3A3A;
-        transition: all 0.3s ease;
-    }
-    
     .prev {
         left: 7px;
     }
@@ -917,7 +906,7 @@
     }
     
     .gallery {
-        width: 200px;
+        width: 250px;
         height: 600;
         overflow: hidden;
         margin: 20px 0px;
