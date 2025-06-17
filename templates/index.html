@@ -37,6 +37,12 @@
                 </div>
             </div>
         </div>
+        <div class="loginModal">
+            <div class="loginModalContent">
+                <div class="loginModalText">Личный кабинт ещё в разработке</div>
+                <a href="#" class="button" id="loginBtnClose">Закрыть</a>
+            </div>
+        </div>
     </header>
     <section id="about" class="about">
         <div class="text">Об Авторе</div>
@@ -720,6 +726,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var loginModal = document.getElementById("loginModal");
     var programModal = document.getElementById("programModal");
     var loginBtn = document.getElementById("loginBtn");
+    var loginBtnClose = document.getElementById("loginBtnClose");
     var programBtn = document.getElementById("program-button");
     var closeBtns = document.getElementsByClassName("close");
 
@@ -747,9 +754,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    loginBtnClose.onclick = function(event) {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+        loginModal.style.display = "none";
+        document.body.style.overflow = "";
+    }
+
     programModal.addEventListener('click', function(event) {
         if (event.target === programModal) {
             programModal.style.display = "none";
+            document.body.style.overflow = "";
+        }
+    });
+    loginModal.addEventListener('click', function(event) {
+        if (event.target === loginModal) {
+            loginModal.style.display = "none";
             document.body.style.overflow = "";
         }
     });
