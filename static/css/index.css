@@ -582,6 +582,8 @@
         top: 0;
         background-color: rgba(0, 0, 0, 0.9);
         align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .loginModalContent {
