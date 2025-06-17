@@ -734,6 +734,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loginBtn.onclick = function(event) {
         event.preventDefault(); // Предотвращаем переход по ссылке
         loginModal.style.display = "flex";
+        document.body.style.overflow = "hidden";
     }
     programBtn.onclick = function(event) {
         event.preventDefault(); // Предотвращаем переход по ссылке
