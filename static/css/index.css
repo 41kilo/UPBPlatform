@@ -848,6 +848,7 @@
     }
 
     .tariff-price{
+        display: none;
         font-size: 25px;
     }
 
